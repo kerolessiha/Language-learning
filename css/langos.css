@@ -62,6 +62,12 @@ header .container {
   flex-wrap: wrap;
   position: relative;
 }
+@media (max-width: 768px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* الخط اللي تحت الهيدر*/
 header .container::after {
   content: "";
@@ -82,6 +88,7 @@ header .logo {
   color: var(--main-color);
   text-decoration: none;
 }
+
 header nav {
   display: flex;
   align-items: center;
@@ -116,6 +123,11 @@ header nav .form {
   margin-left: 30px;
   border-left: 1px solid black;
 }
+@media (max-width: 768px) {
+  header nav .form {
+    display: none;
+  }
+}
 header nav .form i {
   position: absolute;
   color: black;
@@ -123,6 +135,11 @@ header nav .form i {
   font-size: 20px;
   top: 50%;
   transform: translatey(-50%);
+}
+@media (max-width: 768px) {
+  header nav .form i {
+    display: none;
+  }
 }
 /* end header */
 /* start landing  */
@@ -162,6 +179,11 @@ header nav .form i {
   width: 500px;
   animation: up-and-down 5s linear infinite;
   animation: updown 5s linear infinite;
+}
+@media (max-width: 768px) {
+  .landing .image img {
+    display: none;
+  }
 }
 .cta {
   position: relative;
@@ -278,6 +300,7 @@ header nav .form i {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
 .why_learn .container {
   display: flex;
   justify-content: space-between;
@@ -291,6 +314,14 @@ header nav .form i {
 .why_learn .image img {
   width: 600px;
   right: 0;
+}
+@media (max-width: 768px) {
+  .why_learn .image img {
+    display: none;
+  }
+  .why_learn .container .text h2 {
+    margin-top: 50px;
+  }
 }
 .effective {
   position: relative;
